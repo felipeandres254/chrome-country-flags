@@ -1,0 +1,14 @@
+{
+    "name": "Country Flag Emojis",
+    "short_name": "Country Flag Emojis",
+    "manifest_version": 2,
+    "version": "1.0.0",
+    "description": "Replace Unicode flag characters with images",
+    "author": "Andrés Felipe Torres",
+    "content_scripts": [{
+        "matches": ["*://*/*"],
+        "all_frames": true,
+        "js": ["scripts/emoji-images.js", "scripts/main.js"],
+        "run_at": "document_end"
+    }]
+}
