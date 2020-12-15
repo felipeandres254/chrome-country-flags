@@ -29,7 +29,7 @@ request.get = async (url) => new Promise((resolve, reject) => {
             let path = item.match(/href="(.*?)"/)[1]
             let flag = (await request.get(`${HOST}${path}`)).content
             let unicode = flag.match(/<h1><span class="emoji">(.*?)<\/span>.*<\/h1>/)[1]
-            let image = flag.match(/srcset="(.*?\/thumbs\/240\/google\/.*?) 2x"\s/)[1]
+            let image = flag.match(/srcset="(.*?\/thumbs\/240\/twitter\/.*?) 2x"\s/)[1]
             let line = `    "${unicode}": "${image}",\n`
             await util.promisify(fs.appendFile)('scripts/emoji-images.js', line)
         } catch {}
