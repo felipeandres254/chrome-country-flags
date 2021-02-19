@@ -1,0 +1,14 @@
+{
+    "name": "chrome-country-flags",
+    "version": "1.0.0",
+    "description": "A simple Chrome extension that replaces Unicode flag characters with emoji images (Twitter style).",
+    "author": "Andrés Felipe Torres",
+    "license": "UNLICENSED",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/felipeandres254/chrome-country-flags.git"
+    },
+    "devDependencies": {
+        "cli-progress": "^3.9.0"
+    }
+}
